@@ -1,6 +1,13 @@
 <script>
 export default {
     name: 'AppFooter'
+    props:{
+      social: Array
+    },
+    data(){
+      return{
+      }
+    }
 }
 </script>
 
@@ -11,8 +18,12 @@ export default {
         <p>SIGN-UP NOW!</p>
       </div>
       <div class="social">
-        <p>FOLLOW US</p>
-        <img src="../assets/img/footer-facebook.png" alt="">
+        <ul>
+          <p>FOLLOW US</p>
+          <li v-for="(icon, index) in social" :key="index">
+            <img :src="icon.path" :alt="icon.nome">
+          </li>
+        </ul>
       </div>
     </div>
   </footer>
@@ -28,6 +39,14 @@ footer{
     height: 120px;
     //debug
     border: 1px dotted red;
+    .social{
+      display: flex;
+      ul{
+        li{
+
+        }
+      }
+    }
   }
 }
   

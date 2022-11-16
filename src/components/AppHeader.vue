@@ -37,7 +37,9 @@ export default {
 @use '../style/partial/mixin' as *;
 @use '../style/partial/variables' as *;
 
-    .container{
+    header{
+        background-color: white;
+        .container{
         height: 120px;
       .menu{
         height: 100%;
@@ -68,6 +70,7 @@ export default {
         }
       }
       }
+    }
     }
 
 </style>

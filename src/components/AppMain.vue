@@ -5,9 +5,17 @@ export default {
 </script>
 
 <template>
-  <main>Main</main>
+  <main></main>
 </template>
 
-<style>
+<style lang="scss" scoped>
+
+main{
+  height: calc(100vh - 240px);
+  background-color: lightgray;
+  .container{
+
+  }
+}
 
 </style>
