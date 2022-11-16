@@ -14,16 +14,15 @@ export default {
             
             <nav class="menu">
                     <ul>
-                        <li><a href="#">CHARACTERS</a></li>
-                        <li><a href="#">COMICS</a></li>
-                        <li><a href="#">MOVIES</a></li>
-                        <li><a href="#">TV</a></li>
-                        <li><a href="#">GAMES</a></li>
-                        <li><a href="#">COLLECTIBLES</a></li>
-                        <li><a href="#">VIDEOS</a></li>
-                        <li><a href="#">FANS</a></li>
-                        <li><a href="#">NEWS</a></li>
-                        <li><a href="#">SHOP</a></li>
+                        <li
+                        v-for="(link, index) in menu"
+                        :key="index"
+                        ><a 
+                        :class="{'active': link.current}"
+                        :href="link.href"
+                        href="#">
+                        {{link.text}}
+                        </a></li>
                      </ul>
             </nav>
         </div>    
@@ -31,16 +30,18 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-    li {
-        list-style: none;
-        margin: 10px;
-        a {
-            text-decoration: none;
-        }
-    }
 
     ul {
         display: flex;
+        li {
+         list-style: none;
+         margin: 10px; 
+         a {
+            text-decoration: none;
+            color: black;
+            font-weight: 600;
+          }
+        }
     }
 
 </style>
