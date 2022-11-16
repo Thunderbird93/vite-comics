@@ -10,7 +10,9 @@ export default {
         <div class="container">
             <div class="logo">
                 <img src="/dc-logo.png" alt="logo">
-                <nav class="menu">
+            </div>
+            
+            <nav class="menu">
                     <ul>
                         <li><a href="#">CHARACTERS</a></li>
                         <li><a href="#">COMICS</a></li>
@@ -23,15 +25,15 @@ export default {
                         <li><a href="#">NEWS</a></li>
                         <li><a href="#">SHOP</a></li>
                      </ul>
-                </nav>
-        </div>
-        </div>
+            </nav>
+        </div>    
     </header>
 </template>
 
 <style lang="scss" scoped>
     li {
         list-style: none;
+        margin: 10px;
         a {
             text-decoration: none;
         }
@@ -41,12 +43,4 @@ export default {
         display: flex;
     }
 
-    .logo {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    li {
-        margin: 10px;
-    }
 </style>
