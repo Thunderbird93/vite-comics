@@ -3,7 +3,7 @@
 import AppHeader from './components/AppHeader.vue';
 import AppFooter from './components/AppFooter.vue';
 import AppMain from './components/AppMain.vue';
-import links from './data/menu/menurun';
+import links from './data/menu/menu';
 
 export default {
   name: 'App',
