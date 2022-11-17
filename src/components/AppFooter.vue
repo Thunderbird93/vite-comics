@@ -21,7 +21,7 @@ export default {
         <ul>
           <p>FOLLOW US</p>
           <li v-for="(icon, index) in social" :key="index">
-            <img :src="icon.path" :alt="icon.nome">
+            <img :src="icon.path" alt="">
           </li>
         </ul>
       </div>
