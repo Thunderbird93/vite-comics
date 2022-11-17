@@ -1,11 +1,9 @@
 <script>
-
 import AppHeader from './components/AppHeader.vue';
 import AppFooter from './components/AppFooter.vue';
 import AppMain from './components/AppMain.vue';
-import links from './data/menu/menu';
-import icons from './data/social/social';
-
+import links from './data/menu/menu.js';
+import icons from './data/social/social.js';
 export default {
   name: 'App',
   components:{

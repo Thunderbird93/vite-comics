@@ -1,13 +1,13 @@
 <script>
 export default {
-    name: 'AppFooter'
+    name: 'AppFooter',
     props:{
       social: Array
     },
     data(){
       return{
-      }
     }
+  }
 }
 </script>
 
@@ -32,7 +32,6 @@ export default {
 <style lang="scss" scoped>
 @use '../style/partial/mixin' as *;
 @use '../style/partial/variables' as *;
-
 footer{
   background-color: #303030;
   .container{
@@ -42,8 +41,9 @@ footer{
     .social{
       display: flex;
       ul{
+        display: flex;
         li{
-
+          list-style: none; 
         }
       }
     }

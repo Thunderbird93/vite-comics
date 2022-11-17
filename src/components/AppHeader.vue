@@ -33,10 +33,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-
 @use '../style/partial/mixin' as *;
 @use '../style/partial/variables' as *;
-
     header{
         background-color: white;
         .container{
@@ -72,5 +70,4 @@ export default {
       }
     }
     }
-
 </style>
