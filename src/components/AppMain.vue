@@ -1,12 +1,21 @@
+<template>
+  <main>
+    <div></div> 
+  </main>
+</template>
+
+
 <script>
 export default {
-    name: 'AppMain'
+    name: 'AppMain',
+    data(){
+      return{
+        
+      }
+    },
 }
 </script>
 
-<template>
-  <main></main>
-</template>
 
 <style lang="scss" scoped>
 
