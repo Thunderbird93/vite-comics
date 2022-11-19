@@ -13,19 +13,24 @@ export default {
 
 <template>
   <footer>
-    <div class="container">
-      <div class="cta">
-        <p>SIGN-UP NOW!</p>
-      </div>
-      <div class="social">
-        <ul>
-          <p>FOLLOW US</p>
-          <li v-for="(icon, index) in social" :key="index">
-            <img :src="icon.path" alt="">
-          </li>
-        </ul>
+    <div class="jfooter">
+      <div class="jcontainer">
+
       </div>
     </div>
+      <div class="container">
+        <div class="cta">
+          <p>SIGN-UP NOW!</p>
+        </div>
+        <div class="social">
+          <ul>
+            <p>FOLLOW US</p>
+            <li v-for="(icon, index) in social" :key="index">
+              <img :src="icon.path" alt="">
+            </li>
+          </ul>
+        </div>
+      </div>
   </footer>
 </template>
 
@@ -35,7 +40,7 @@ export default {
 footer{
   background-color: #303030;
   .container{
-    height: 120px;
+    height: 110px;
     //debug
     border: 1px dotted red;
     .social{
