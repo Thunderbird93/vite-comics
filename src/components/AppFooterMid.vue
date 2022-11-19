@@ -27,7 +27,9 @@ export default {
                 </li>
             </ul>
         </div>
-        <div class="f-logo"></div>
+        <div class="f-logo">
+            <img src="../assets/img/dc-logo-bg.png" alt="">
+        </div>
     </div>
 </div>  
     </template>
@@ -39,12 +41,14 @@ export default {
 
 .mid-foot{
 background-image: url(../assets/img/footer-bg.jpg);
-height: 280px;
+height: 240px;
 padding: 20px 0;
+z-index: 1;
     h3{
         color: white;
     }
     .container{
+        font-size: 13px;
         align-self: start;
             .f-menu{
                 height: 100%;
@@ -53,17 +57,23 @@ padding: 20px 0;
                     display: flex;
                     flex-direction: column;
                     column-count: auto;
-                    column-gap: 30px;
+                    column-gap: 15px;
                     column-width: 300px;
                     flex-wrap: wrap;
               .first-li {
                 display: flex;
                 flex-direction: column;
+                margin-bottom: 10px;
                 a{
                     color: #535D65;
                 }
              }
           }
+        }
+        .f-logo{
+            img{
+                height: 370px;
+            }
         }
     }        
 }
