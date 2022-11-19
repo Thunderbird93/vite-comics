@@ -13,11 +13,6 @@ export default {
 
 <template>
   <footer>
-    <div class="jfooter">
-      <div class="jcontainer">
-
-      </div>
-    </div>
       <div class="container">
         <div class="cta">
           <p>SIGN-UP NOW!</p>

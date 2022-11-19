@@ -5,6 +5,8 @@ import AppMain from './components/AppMain.vue';
 import AppFooterMid from './components/AppFooterMid.vue';
 import links from './data/menu/menu.js';
 import icons from './data/social/social.js';
+import imenu from './data/menu/fmenu.js';
+
 export default {
   name: 'App',
   components:{
@@ -16,7 +18,8 @@ export default {
   data(){
     return{
       links,
-      icons
+      icons,
+      imenu
     }
   }
 }
@@ -26,7 +29,7 @@ export default {
 
   <AppHeader :menu="links" />
   <AppMain />
-  <AppFooterMid />
+  <AppFooterMid :fmenu="imenu"/>
   <AppFooter :social="icons" />
 
 </template>
