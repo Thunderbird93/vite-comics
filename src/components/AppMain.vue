@@ -20,7 +20,7 @@ export default {
 <style lang="scss" scoped>
 
 main{
-  height: calc(100vh - 240px);
+  height: calc(100vh - 470px);
   background-color: lightgray;
   .container{
 

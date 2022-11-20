@@ -44,6 +44,7 @@ background-image: url(../assets/img/footer-bg.jpg);
 height: 240px;
 padding: 20px 0;
 z-index: 1;
+position: relative;
     h3{
         color: white;
     }
@@ -73,6 +74,9 @@ z-index: 1;
         .f-logo{
             img{
                 height: 370px;
+                position: absolute;
+                right: 300px;
+                bottom: -60px;
             }
         }
     }        
