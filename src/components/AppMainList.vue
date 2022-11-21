@@ -28,13 +28,21 @@ export default {
 
  .lista{
     background-color: #1C1C1C;
-    min-height: 400px;
-    max-height: 100vh;
+    height: 100vh;
     .container{
         min-height: 400px;
+        display: flex;
+        flex-wrap: wrap;
         .card{
-            height: 150px;
-            width: 150px;
+            width: calc(100%/6);
+            padding: 15px;
+            inline-size: 209px;
+            img{
+                height: 150px;
+                width: 150px;
+                object-fit: cover;
+                object-position: top;
+            }
         }
     }
  }
