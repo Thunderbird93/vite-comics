@@ -1,6 +1,9 @@
 <script>
 export default {
     name: 'AppMainList',
+    props:{
+        cards: Object
+    },
     data(){
         return{
         }
@@ -11,9 +14,12 @@ export default {
 <template>
   <div class="lista">
     <div class="container">
-
+        <div v-for="(card, index) in cards" class="card">
+            <img :src="card.thumb" :alt="card.series">
+            <h5>{{card.series}}</h5>
+        </div>
     </div>
-  </div>
+  </div>      
 </template>
 
 <style lang="scss" scoped>
@@ -26,6 +32,10 @@ export default {
     max-height: 100vh;
     .container{
         min-height: 400px;
+        .card{
+            height: 150px;
+            width: 150px;
+        }
     }
  }
 

@@ -5,11 +5,12 @@ import AppMain from './components/AppMain.vue';
 import AppFooterMid from './components/AppFooterMid.vue';
 import AppFooterTop from './components/AppFooterTop.vue';
 import AppMainList from './components/AppMainList.vue';
-import AppCards from './components/AppCards.vue';
 import links from './data/menu/menu.js';
 import icons from './data/social/social.js';
 import imenu from './data/menu/fmenu.js';
 import prodotti from './data/merch/prodotti';
+import cards from "./data/cards/cards";
+
 
 export default {
   name: 'App',
@@ -18,7 +19,6 @@ export default {
     AppFooter,
     AppMain,
     AppMainList,
-    AppCards,
     AppFooterMid,
     AppFooterTop
   },
@@ -27,7 +27,8 @@ export default {
       links,
       icons,
       imenu,
-      prodotti
+      prodotti,
+      cards,
     }
   }
 }
@@ -37,8 +38,7 @@ export default {
 
   <AppHeader :menu="links" />
   <AppMain />
-  <AppMainList />
-  <AppCards />
+  <AppMainList :cards="cards"/>
   <AppFooterTop :prodotti="prodotti" />
   <AppFooterMid :fmenu="imenu"/>
   <AppFooter :social="icons" />
