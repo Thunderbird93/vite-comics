@@ -1,10 +1,3 @@
-<template>
-  <main>
-    <div></div> 
-  </main>
-</template>
-
-
 <script>
 export default {
     name: 'AppMain',
@@ -17,14 +10,21 @@ export default {
 </script>
 
 
+<template>
+  <main>
+    <div class="jumbotron">
+      <div class="container"></div>
+    </div>
+  </main>
+</template>
+
+
 <style lang="scss" scoped>
 
 main{
   height: calc(100vh - 470px);
-  background-color: lightgray;
-  .container{
-
-  }
+  background-image: url(../assets/img/jumbotron.jpg);
+  background-size: cover;
 }
 
 </style>

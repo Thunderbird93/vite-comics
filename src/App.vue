@@ -4,6 +4,7 @@ import AppFooter from './components/AppFooter.vue';
 import AppMain from './components/AppMain.vue';
 import AppFooterMid from './components/AppFooterMid.vue';
 import AppFooterTop from './components/AppFooterTop.vue';
+import AppMainList from './components/AppMainList.vue'
 import links from './data/menu/menu.js';
 import icons from './data/social/social.js';
 import imenu from './data/menu/fmenu.js';
@@ -15,6 +16,7 @@ export default {
     AppHeader,
     AppFooter,
     AppMain,
+    AppMainList,
     AppFooterMid,
     AppFooterTop
   },
@@ -33,6 +35,7 @@ export default {
 
   <AppHeader :menu="links" />
   <AppMain />
+  <AppMainList />
   <AppFooterTop :prodotti="prodotti" />
   <AppFooterMid :fmenu="imenu"/>
   <AppFooter :social="icons" />
