@@ -7,6 +7,7 @@ import AppFooterTop from './components/AppFooterTop.vue';
 import links from './data/menu/menu.js';
 import icons from './data/social/social.js';
 import imenu from './data/menu/fmenu.js';
+import prodotti from './data/merch/prodotti';
 
 export default {
   name: 'App',
@@ -21,7 +22,8 @@ export default {
     return{
       links,
       icons,
-      imenu
+      imenu,
+      prodotti
     }
   }
 }
@@ -31,7 +33,7 @@ export default {
 
   <AppHeader :menu="links" />
   <AppMain />
-  <AppFooterTop />
+  <AppFooterTop :prodotti="prodotti" />
   <AppFooterMid :fmenu="imenu"/>
   <AppFooter :social="icons" />
 
